@@ -2,12 +2,16 @@ os: linux
 
 language: node_js
 
-node_js:
-  - 7
-  
+node_js: 11.6.0
+
+cache: yarn
+
+install: 
+ - yarn install
+
 script:
-  - npm test
-  - npm run
+  - yarn test
+  - yarn run build
 
 deploy:
   provider: pages
