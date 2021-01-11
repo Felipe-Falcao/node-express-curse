@@ -7,7 +7,7 @@ node_js: 11.6.0
 cache: npm
 
 install: 
- - npm test
+ - npm install
 
 script:
   - npm start
