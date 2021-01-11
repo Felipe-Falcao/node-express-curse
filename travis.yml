@@ -4,17 +4,17 @@ language: node_js
 
 node_js: 11.6.0
 
-cache: npm 
+cache: npm
 
-install:
-  - npm install
-  
+install: 
+ - npm install
+
 script:
   - npm start
-  
+
 deploy:
   provider: pages
-  skip_clenup: true
+  skip_cleanup: true
   github_token: $GITHUB
   keep_history: true
   target_branch: gh-pages
