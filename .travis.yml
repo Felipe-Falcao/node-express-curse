@@ -1,0 +1,22 @@
+os: linux
+
+language: node_js
+
+node_js: 11.6.0
+
+cache: npm
+
+install: 
+ - npm install
+
+script:
+  - npm start
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB
+  keep_history: true
+  target_branch: gh-pages
+  on:
+    branch: master
